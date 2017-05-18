@@ -5,15 +5,19 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
+<div class="basket" id="header-basket"><a href="/basket.html">Basket:
+<span id="basket-count">0</span> items</a></div>
     <div class="single-course-page">
     
             <div class="course">
                 <h1 class="course-title">{{ course.name }}</h1> 
                 <p class="course-description">{{ course.description }} </p>
+                <a href="#" id="add-to-basket" data-course-id="{{course.id}}">Add course to basket</a>
                 </div>
-            
+          
         </div>
         <a href="/courses">Back</a>
         
+    <script src="/app.js" content-type="application/javascript"></script>
 </body>
 </html>
