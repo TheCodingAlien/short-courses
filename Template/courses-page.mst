@@ -1,0 +1,19 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to our courses</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h1>Our Courses</h1>
+    <div class="courses-page">
+        {{#courses}}
+            <div class="course">
+                <h1 class="course-title">{{ name }}</h1> 
+                <p class="course-description">{{ description }} </p>
+                <a href="/course/{{ id }}">more detail</a>
+                </div>
+            {{/courses}}
+        </div>
+</body>
+</html>
